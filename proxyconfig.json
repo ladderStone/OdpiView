@@ -1,9 +1,0 @@
-
-
-{
-    "/api":{
-        "target": "http://localhost:8080/secured/all",
-        "secure": false,
-        "changeOrigin":true 
-    }
-}
