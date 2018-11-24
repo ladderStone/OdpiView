@@ -1,18 +1,46 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
+import { Routes, RouterModule } from '@angular/router';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
+import { HomeSectionComponent } from './home-section/home-section.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LoginComponent } from './login/login.component';
+import { AuthServiceService } from './services/auth-service.service';
 
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeSectionComponent
+  },
+  {
+    path: 'signup',
+    component: SignUpComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeSectionComponent,
+    SignUpComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    AngularFireModule.initializeApp(environment.firebase,'angular-auth-firebase'),
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features
   ],
-  providers: [],
+  providers: [AuthServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

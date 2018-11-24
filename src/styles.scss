@@ -2,3 +2,21 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import '~bootstrap/scss/bootstrap-reboot';
 @import '~bootstrap/scss/bootstrap-grid';
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    height: 100vh;
+  }
+   
+  app-root {
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+    display: block;
+    background: rgba(170, 167, 193, 0.37);
+  }
