@@ -9,7 +9,10 @@ import { AppComponent } from './app.component';
 import { HomeSectionComponent } from './home-section/home-section.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
+import{ LoginService } from './services/login.service';
 import { AuthServiceService } from './services/auth-service.service';
+import { HttpClientModule } from '@angular/common/http'; 
+
 
 const routes: Routes = [
   {
@@ -35,12 +38,13 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
     AngularFireModule.initializeApp(environment.firebase,'angular-auth-firebase'),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
   ],
-  providers: [AuthServiceService],
+  providers: [AuthServiceService, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
