@@ -20,14 +20,14 @@ export class LoginService {
   }
 
   getUserDetails(email, password){
-    debugger;
+    
   return this.http.get('http://localhost:8080/loginUser?email='+email+'&password='+password,
     
      {responseType: 'json'})
   }
 
   saveUser(email,firstName,lastName,password,ssoId,userProfiles){
-    debugger;
+    
     return this.http.post('http://localhost:8080/addUser',
     {email,firstName,lastName,password,ssoId,userProfiles},
       {responseType:'text'})

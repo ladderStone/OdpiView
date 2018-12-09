@@ -16,11 +16,16 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   signInWithGoogle(){
+    
     this.myService.signInWithGoogle();
   }
 
+  signInWithFacebook(){
+    this.myService.signInWithFacebook();
+  }
+
   loginUser(event){
-    debugger;
+    
     event.preventDefault();
     const target = event.target;
     const email = target.querySelector('#email').value;
