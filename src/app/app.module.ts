@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import{ LoginService } from './services/login.service';
 import { AuthServiceService } from './services/auth-service.service';
 import { HttpClientModule } from '@angular/common/http'; 
+import { SignUpService } from './services/sign-up.service';
 
 
 const routes: Routes = [
@@ -44,7 +45,7 @@ const routes: Routes = [
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
   ],
-  providers: [AuthServiceService, LoginService],
+  providers: [AuthServiceService, LoginService, SignUpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

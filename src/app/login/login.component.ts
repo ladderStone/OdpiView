@@ -32,8 +32,6 @@ export class LoginComponent implements OnInit {
     const password = target.querySelector('#password').value;
 
     this.loginService.getUserDetails(email, password).subscribe(data => {
-      console.log(data);
-
       /*if(data.credentialsNonExpired){
         this.loginService.setLoggedIn(true); 
         this.router.navigate(['admin']);
