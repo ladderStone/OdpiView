@@ -1,0 +1,43 @@
+.landing-page-banner{
+    background-image: url("https://dvokhk8ohqhd8.cloudfront.net/assets/landing/candidate/pattern-5486b26bc87f9acadf9a7d309dde3af926df8cb8938901c7a8a3e2b4cad614c4.png"),
+    linear-gradient(#1D2E81, #32A6EE);
+    background-size: cover;
+    height:550px;
+}
+.w-full {
+    width: 100%;
+}
+.hero {
+    padding-top: 5rem;
+}
+.hero-content{
+    color: #fff;
+    text-align: center;
+    h1{
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+    }
+}
+.green {
+    margin: 30px;
+    width: 250px;
+    height: 55px;
+    padding:15px 0 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.05s linear;
+    background-color: #00ba7c;
+    border: 1px solid #00ba7c;
+    color: #fff;
+}
+.relative {
+    position: relative;
+}
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}

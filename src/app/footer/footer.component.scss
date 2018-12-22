@@ -1,0 +1,38 @@
+.footer {
+    background: #233240;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    border: none;
+    height: 80px;
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    list-style-type: none;
+        
+    }
+    li{
+        color:white;
+        padding-right: 1em;
+        display: inline-block;
+        padding: 0;
+        margin-right: 35px;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        a{
+            color:white;
+        }
+    }
+
+    .sublinks{
+        margin-top: 30px;
+        align-items: center;
+    }
+}

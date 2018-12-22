@@ -13,6 +13,7 @@ import{ LoginService } from './services/login.service';
 import { AuthServiceService } from './services/auth-service.service';
 import { HttpClientModule } from '@angular/common/http'; 
 import { SignUpService } from './services/sign-up.service';
+import { FooterComponent } from './footer/footer.component';
 
 
 const routes: Routes = [
@@ -35,7 +36,8 @@ const routes: Routes = [
     AppComponent,
     HomeSectionComponent,
     SignUpComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
