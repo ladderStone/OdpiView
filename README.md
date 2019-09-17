@@ -32,7 +32,6 @@ var t = 'sdfsdfsdfs';
 
 ```
 
-
 ```javascript
 var t = 'sdfsdfsdfs';
 alert();
